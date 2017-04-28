@@ -1,5 +1,5 @@
-# cordin
-repository for Cordin software
+# High Speed Imaging
+Repository for image and video processing software used for annotating and analyzing high speed imaging data.
 
 ### cordin.py
 Utility functions for reading & processing Cordin images.
