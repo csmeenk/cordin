@@ -8,11 +8,12 @@
 #		filename - the avi file
 #		fps - number of frames/second
 #		tstart - time of the first frame in seconds (can be positive or negative)
+#		magnification - objective magnification. Equal to 20, 60, or 120
 #
 #	USAGE:
-#		$ timestamp_file.sh 170208155837.avi 2000 -4e-3
+#		$ timestamp_file.sh 170208155837.avi 2000 -4e-3 60
 #	To write stdout and stderr to a data file:
-#		$ timestamp_file.sh 170208155837.avi 2000 -4e-3 1> log.txt 2> err.txt
+#		$ timestamp_file.sh 170208155837.avi 2000 -4e-3 60 1> log.txt 2> err.txt
 #
 # Christopher Smeenk 15.02.2017
 
@@ -44,5 +45,5 @@ timestamp_ims_sh.py 00.jpg $fps $tstart $magnification
 
 
 # Optionally write the images to an .avi movie using:
-mencoder "mf://tstamp/*_tstamp.jpg" -mf fps=20 -o newanim.avi -ovc copy -lavcopts vcodec=msmpeg4v2
+mencoder "mf://tstamp/*_tstamp.jpg" -mf fps=5 -o newanim.avi -ovc copy -lavcopts vcodec=msmpeg4v2
 cd ..
