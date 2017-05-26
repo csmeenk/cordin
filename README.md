@@ -11,19 +11,20 @@ Script to analyze bright and dark regions from a series of high speed images and
 Script to add time stamp values onto a .avi video. The user must additionally provide:
 - `fps` the number of frames per second
 - `starttime` the time of the initial frame in seconds
+- `mag` the microscope objective magnification for length scale bar (possible values = 20,60,120)
 
 Example Usage: 
 ```bash
-$ timestamp_file.sh filename.avi fps starttime
+$ timestamp_file.sh filename.avi fps starttime mag
 ```
 
 ### timestamp_ims_sh.py
 A script to insert timestamps into a set of images. The images must be numbered sequentially (im001.jpg, im002.jpg, ...). The user must additionally provide:
 - `fps` the number of frames per second
 - `tstart` the time of the initial frame in seconds
-- `magnification` the microscope objective magnification for length scale bar (possible values = 20,60,120)
+- `mag` the microscope objective magnification for length scale bar (possible values = 20,60,120)
 
 Example Usage:
 ```bash
-$ timestamp_ims_sh.py filename fps tstart magnification
+$ timestamp_ims_sh.py filename fps tstart mag
 ```
